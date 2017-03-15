@@ -55,6 +55,8 @@ function _getPostingDetails (postingUrl, markup) {
 	details.replyUrl = ($('#replylink').attr('href') || '').trim();
 	details.title = ($('#titletextonly').text() || '').trim();
 	details.url = postingUrl;
+	details.price = ($('span.price').text() || '').trim();
+	details.housing = ($('span.housing').text() || '').trim();
 
 	// populate posting info
 	$('div.postinginfos').find('.postinginfo').each((i, element) => {
