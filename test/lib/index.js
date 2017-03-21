@@ -72,6 +72,7 @@ describe('unit tests for node-craigslist', function () {
 				should.exist(details.price);
 				should.exist(details.housing);
 				should.exist(details.location);
+				should.exist(details.availability);
 
 				return done();
 			});
