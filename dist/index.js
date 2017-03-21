@@ -74,6 +74,7 @@ function _getPostingDetails(postingUrl, markup) {
 	details.price = ($('span.price').text() || '').trim();
 	details.housing = ($('span.housing').text() || '').trim();
 	details.location = ($('span.postingtitletext').find('small').text() || '').trim();
+	details.availability = ($('span.property_date').text() || '').trim();
 
 	// populate posting info
 	$('div.postinginfos').find('.postinginfo').each(function (i, element) {
